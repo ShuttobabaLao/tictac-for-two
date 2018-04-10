@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:weightSum="3"
+    android:layout_weight="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MULTIPLAYER TIC-TAC-TOE GAME"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/threes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tictactoe3"
+            android:layout_weight="1"
+            android:onClick="hitMe3"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BEGIN 3X3 GRID"
+            android:textAlignment="center"
+            />
+
+        <ImageView
+            android:id="@+id/fives"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tictactoe5"
+            android:layout_weight="1"
+            android:onClick="hitMe5"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BEGIN 5X5 GRID"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
